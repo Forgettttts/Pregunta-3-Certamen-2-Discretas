@@ -243,58 +243,544 @@ Ahora veremos el caso de $x_{5}$ al cual le aplicamos el algoritmo de caminos al
 \newline
 \begin{minipage}[t]{0.6\textwidth}
 
-\captionof{figure}{$x_{}$}
-\end{minipage}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,829); %set diagram left start at 0, and has height of 829
+
+%Shape: Circle [id:dp42126357138378834] 
+\draw   (345,37) .. controls (345,23.19) and (356.19,12) .. (370,12) .. controls (383.81,12) and (395,23.19) .. (395,37) .. controls (395,50.81) and (383.81,62) .. (370,62) .. controls (356.19,62) and (345,50.81) .. (345,37) -- cycle ;
+%Shape: Circle [id:dp2876527909810819] 
+\draw   (240,773) .. controls (240,759.19) and (251.19,748) .. (265,748) .. controls (278.81,748) and (290,759.19) .. (290,773) .. controls (290,786.81) and (278.81,798) .. (265,798) .. controls (251.19,798) and (240,786.81) .. (240,773) -- cycle ;
+%Shape: Circle [id:dp7089847698212008] 
+\draw   (240,681) .. controls (240,667.19) and (251.19,656) .. (265,656) .. controls (278.81,656) and (290,667.19) .. (290,681) .. controls (290,694.81) and (278.81,706) .. (265,706) .. controls (251.19,706) and (240,694.81) .. (240,681) -- cycle ;
+%Shape: Circle [id:dp5035956506661002] 
+\draw   (240,586) .. controls (240,572.19) and (251.19,561) .. (265,561) .. controls (278.81,561) and (290,572.19) .. (290,586) .. controls (290,599.81) and (278.81,611) .. (265,611) .. controls (251.19,611) and (240,599.81) .. (240,586) -- cycle ;
+%Shape: Circle [id:dp8923694421088744] 
+\draw   (240,502) .. controls (240,488.19) and (251.19,477) .. (265,477) .. controls (278.81,477) and (290,488.19) .. (290,502) .. controls (290,515.81) and (278.81,527) .. (265,527) .. controls (251.19,527) and (240,515.81) .. (240,502) -- cycle ;
+%Shape: Circle [id:dp2960284631940525] 
+\draw   (126,509) .. controls (126,495.19) and (137.19,484) .. (151,484) .. controls (164.81,484) and (176,495.19) .. (176,509) .. controls (176,522.81) and (164.81,534) .. (151,534) .. controls (137.19,534) and (126,522.81) .. (126,509) -- cycle ;
+%Shape: Circle [id:dp13880770051115654] 
+\draw   (7,513) .. controls (7,499.19) and (18.19,488) .. (32,488) .. controls (45.81,488) and (57,499.19) .. (57,513) .. controls (57,526.81) and (45.81,538) .. (32,538) .. controls (18.19,538) and (7,526.81) .. (7,513) -- cycle ;
+%Shape: Circle [id:dp48111023630589544] 
+\draw   (247,394) .. controls (247,380.19) and (258.19,369) .. (272,369) .. controls (285.81,369) and (297,380.19) .. (297,394) .. controls (297,407.81) and (285.81,419) .. (272,419) .. controls (258.19,419) and (247,407.81) .. (247,394) -- cycle ;
+%Shape: Circle [id:dp36312112831532495] 
+\draw   (124,396) .. controls (124,382.19) and (135.19,371) .. (149,371) .. controls (162.81,371) and (174,382.19) .. (174,396) .. controls (174,409.81) and (162.81,421) .. (149,421) .. controls (135.19,421) and (124,409.81) .. (124,396) -- cycle ;
+%Shape: Circle [id:dp290427991464406] 
+\draw   (9,393) .. controls (9,379.19) and (20.19,368) .. (34,368) .. controls (47.81,368) and (59,379.19) .. (59,393) .. controls (59,406.81) and (47.81,418) .. (34,418) .. controls (20.19,418) and (9,406.81) .. (9,393) -- cycle ;
+%Shape: Circle [id:dp04300068552620473] 
+\draw   (79,298) .. controls (79,284.19) and (90.19,273) .. (104,273) .. controls (117.81,273) and (129,284.19) .. (129,298) .. controls (129,311.81) and (117.81,323) .. (104,323) .. controls (90.19,323) and (79,311.81) .. (79,298) -- cycle ;
+%Shape: Circle [id:dp38134497002072565] 
+\draw   (248,301) .. controls (248,287.19) and (259.19,276) .. (273,276) .. controls (286.81,276) and (298,287.19) .. (298,301) .. controls (298,314.81) and (286.81,326) .. (273,326) .. controls (259.19,326) and (248,314.81) .. (248,301) -- cycle ;
+%Shape: Circle [id:dp16186629456497093] 
+\draw   (344,301) .. controls (344,287.19) and (355.19,276) .. (369,276) .. controls (382.81,276) and (394,287.19) .. (394,301) .. controls (394,314.81) and (382.81,326) .. (369,326) .. controls (355.19,326) and (344,314.81) .. (344,301) -- cycle ;
+%Shape: Circle [id:dp7986410064882784] 
+\draw   (117,190) .. controls (117,176.19) and (128.19,165) .. (142,165) .. controls (155.81,165) and (167,176.19) .. (167,190) .. controls (167,203.81) and (155.81,215) .. (142,215) .. controls (128.19,215) and (117,203.81) .. (117,190) -- cycle ;
+%Shape: Circle [id:dp1524862433539973] 
+\draw   (345,190) .. controls (345,176.19) and (356.19,165) .. (370,165) .. controls (383.81,165) and (395,176.19) .. (395,190) .. controls (395,203.81) and (383.81,215) .. (370,215) .. controls (356.19,215) and (345,203.81) .. (345,190) -- cycle ;
+%Shape: Circle [id:dp6065605412557471] 
+\draw   (520,194) .. controls (520,180.19) and (531.19,169) .. (545,169) .. controls (558.81,169) and (570,180.19) .. (570,194) .. controls (570,207.81) and (558.81,219) .. (545,219) .. controls (531.19,219) and (520,207.81) .. (520,194) -- cycle ;
+%Shape: Circle [id:dp6528712303311437] 
+\draw   (345,115) .. controls (345,101.19) and (356.19,90) .. (370,90) .. controls (383.81,90) and (395,101.19) .. (395,115) .. controls (395,128.81) and (383.81,140) .. (370,140) .. controls (356.19,140) and (345,128.81) .. (345,115) -- cycle ;
+%Straight Lines [id:da5507703442677292] 
+\draw    (370,62) -- (370,90) ;
+%Straight Lines [id:da24277142037716526] 
+\draw    (133,217) -- (104,273) ;
+%Straight Lines [id:da03618899666598907] 
+\draw    (370,215) -- (369,276) ;
+%Straight Lines [id:da19018649625704942] 
+\draw    (273,326) -- (272,369) ;
+%Straight Lines [id:da663292463714982] 
+\draw    (174,413) -- (265,477) ;
+%Straight Lines [id:da8619694960685619] 
+\draw    (265,611) -- (265,656) ;
+%Straight Lines [id:da5841315392696467] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (370,140) -- (370,165) ;
+%Straight Lines [id:da023007242461251964] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (265,706) -- (265,748) ;
+%Straight Lines [id:da38462087016467017] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (149,421) -- (151,484) ;
+%Straight Lines [id:da7829309080478926] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (131,412) -- (37,486) ;
+%Straight Lines [id:da02325145001498674] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (395,115) -- (522,173) ;
+%Straight Lines [id:da47345845774051587] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (344,120) -- (161,170) ;
+%Straight Lines [id:da6808835292032042] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (348,206) -- (273,276) ;
+%Straight Lines [id:da9375277767339547] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (165,204) -- (273,276) ;
+%Straight Lines [id:da15878888042157702] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (104,323) -- (149,371) ;
+%Straight Lines [id:da024897043854294254] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (90,320) -- (34,368) ;
+%Straight Lines [id:da9776578559612566] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (265,527) -- (265,561) ;
+
+% Text Node
+\draw (366,29) node [anchor=north west][inner sep=0.75pt]   [align=left] {x5};
+% Text Node
+\draw (266,387) node [anchor=north west][inner sep=0.75pt]   [align=left] {x9};
+% Text Node
+\draw (542,185) node [anchor=north west][inner sep=0.75pt]   [align=left] {x7};
+% Text Node
+\draw (362,185) node [anchor=north west][inner sep=0.75pt]   [align=left] {x8};
+% Text Node
+\draw (134,183) node [anchor=north west][inner sep=0.75pt]   [align=left] {x6};
+% Text Node
+\draw (26,384) node [anchor=north west][inner sep=0.75pt]   [align=left] {x4};
+% Text Node
+\draw (143,386) node [anchor=north west][inner sep=0.75pt]   [align=left] {x3};
+% Text Node
+\draw (261,581) node [anchor=north west][inner sep=0.75pt]   [align=left] {x2};
+% Text Node
+\draw (257,768) node [anchor=north west][inner sep=0.75pt]   [align=left] {x1};
+% Text Node
+\draw (363,107) node [anchor=north west][inner sep=0.75pt]   [align=left] {y7};
+% Text Node
+\draw (365,291) node [anchor=north west][inner sep=0.75pt]   [align=left] {y6};
+% Text Node
+\draw (272,289) node [anchor=north west][inner sep=0.75pt]   [align=left] {y8};
+% Text Node
+\draw (100,288) node [anchor=north west][inner sep=0.75pt]   [align=left] {y5};
+% Text Node
+\draw (262,495) node [anchor=north west][inner sep=0.75pt]   [align=left] {y1};
+% Text Node
+\draw (148,494) node [anchor=north west][inner sep=0.75pt]   [align=left] {y4};
+% Text Node
+\draw (25,503) node [anchor=north west][inner sep=0.75pt]   [align=left] {y3};
+% Text Node
+\draw (261,673) node [anchor=north west][inner sep=0.75pt]   [align=left] {y2};
+
+
+\end{tikzpicture}
+
+\captionof{figure}{$x_{5}$}
+\end{minipage}\\
+En esta representacion de arbol, vemos como, al igual que la anterior, tiene 6 elementos de $x$ unidos a elementos de $y$.\\
+\newline
+
+
+
+Ahora veremos el caso de $x_{7}$ al cual le aplicamos el algoritmo de caminos alternantes para intentar encontrar mas Matchs:
+\\
+\newline
+\begin{minipage}[t]{0.6\textwidth}
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,915); %set diagram left start at 0, and has height of 915
+
+%Shape: Circle [id:dp23703561609003232] 
+\draw   (300,29) .. controls (300,15.19) and (311.19,4) .. (325,4) .. controls (338.81,4) and (350,15.19) .. (350,29) .. controls (350,42.81) and (338.81,54) .. (325,54) .. controls (311.19,54) and (300,42.81) .. (300,29) -- cycle ;
+%Shape: Circle [id:dp46211733751214557] 
+\draw   (301,249) .. controls (301,235.19) and (312.19,224) .. (326,224) .. controls (339.81,224) and (351,235.19) .. (351,249) .. controls (351,262.81) and (339.81,274) .. (326,274) .. controls (312.19,274) and (301,262.81) .. (301,249) -- cycle ;
+%Shape: Circle [id:dp9295895415589638] 
+\draw   (301,178) .. controls (301,164.19) and (312.19,153) .. (326,153) .. controls (339.81,153) and (351,164.19) .. (351,178) .. controls (351,191.81) and (339.81,203) .. (326,203) .. controls (312.19,203) and (301,191.81) .. (301,178) -- cycle ;
+%Shape: Circle [id:dp3896856708175075] 
+\draw   (299,104) .. controls (299,90.19) and (310.19,79) .. (324,79) .. controls (337.81,79) and (349,90.19) .. (349,104) .. controls (349,117.81) and (337.81,129) .. (324,129) .. controls (310.19,129) and (299,117.81) .. (299,104) -- cycle ;
+%Shape: Circle [id:dp6829467411306345] 
+\draw   (301,313) .. controls (301,299.19) and (312.19,288) .. (326,288) .. controls (339.81,288) and (351,299.19) .. (351,313) .. controls (351,326.81) and (339.81,338) .. (326,338) .. controls (312.19,338) and (301,326.81) .. (301,313) -- cycle ;
+%Shape: Circle [id:dp0554612531371943] 
+\draw   (302,533) .. controls (302,519.19) and (313.19,508) .. (327,508) .. controls (340.81,508) and (352,519.19) .. (352,533) .. controls (352,546.81) and (340.81,558) .. (327,558) .. controls (313.19,558) and (302,546.81) .. (302,533) -- cycle ;
+%Shape: Circle [id:dp8682182230838351] 
+\draw   (302,462) .. controls (302,448.19) and (313.19,437) .. (327,437) .. controls (340.81,437) and (352,448.19) .. (352,462) .. controls (352,475.81) and (340.81,487) .. (327,487) .. controls (313.19,487) and (302,475.81) .. (302,462) -- cycle ;
+%Shape: Circle [id:dp33435274392821146] 
+\draw   (300,388) .. controls (300,374.19) and (311.19,363) .. (325,363) .. controls (338.81,363) and (350,374.19) .. (350,388) .. controls (350,401.81) and (338.81,413) .. (325,413) .. controls (311.19,413) and (300,401.81) .. (300,388) -- cycle ;
+%Shape: Circle [id:dp9675489978973992] 
+\draw   (300,608) .. controls (300,594.19) and (311.19,583) .. (325,583) .. controls (338.81,583) and (350,594.19) .. (350,608) .. controls (350,621.81) and (338.81,633) .. (325,633) .. controls (311.19,633) and (300,621.81) .. (300,608) -- cycle ;
+%Shape: Circle [id:dp4135454848172513] 
+\draw   (161,366) .. controls (161,352.19) and (172.19,341) .. (186,341) .. controls (199.81,341) and (211,352.19) .. (211,366) .. controls (211,379.81) and (199.81,391) .. (186,391) .. controls (172.19,391) and (161,379.81) .. (161,366) -- cycle ;
+%Shape: Circle [id:dp9287097411041398] 
+\draw   (460,361) .. controls (460,347.19) and (471.19,336) .. (485,336) .. controls (498.81,336) and (510,347.19) .. (510,361) .. controls (510,374.81) and (498.81,386) .. (485,386) .. controls (471.19,386) and (460,374.81) .. (460,361) -- cycle ;
+%Shape: Circle [id:dp1968128264100666] 
+\draw   (462,286) .. controls (462,272.19) and (473.19,261) .. (487,261) .. controls (500.81,261) and (512,272.19) .. (512,286) .. controls (512,299.81) and (500.81,311) .. (487,311) .. controls (473.19,311) and (462,299.81) .. (462,286) -- cycle ;
+%Shape: Circle [id:dp020819577107936582] 
+\draw   (463,149) .. controls (463,135.19) and (474.19,124) .. (488,124) .. controls (501.81,124) and (513,135.19) .. (513,149) .. controls (513,162.81) and (501.81,174) .. (488,174) .. controls (474.19,174) and (463,162.81) .. (463,149) -- cycle ;
+%Shape: Circle [id:dp8154674696665646] 
+\draw   (152,245) .. controls (152,231.19) and (163.19,220) .. (177,220) .. controls (190.81,220) and (202,231.19) .. (202,245) .. controls (202,258.81) and (190.81,270) .. (177,270) .. controls (163.19,270) and (152,258.81) .. (152,245) -- cycle ;
+%Shape: Circle [id:dp28547871968767424] 
+\draw   (155,150) .. controls (155,136.19) and (166.19,125) .. (180,125) .. controls (193.81,125) and (205,136.19) .. (205,150) .. controls (205,163.81) and (193.81,175) .. (180,175) .. controls (166.19,175) and (155,163.81) .. (155,150) -- cycle ;
+%Straight Lines [id:da5097287302798681] 
+\draw    (325,54) -- (324,79) ;
+%Straight Lines [id:da8859865211791408] 
+\draw    (180,175) -- (177,220) ;
+%Straight Lines [id:da009411357488418037] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (328,412) -- (327,437) ;
+%Straight Lines [id:da7974992036897571] 
+\draw    (327,487) -- (326,512) ;
+%Straight Lines [id:da30348472644442537] 
+\draw    (326,338) -- (325,363) ;
+%Straight Lines [id:da5738621876703361] 
+\draw    (327,199) -- (326,224) ;
+%Straight Lines [id:da08137026799386493] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (349,104) -- (488,124) ;
+%Straight Lines [id:da12026630237383418] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (299,104) -- (180,125) ;
+%Straight Lines [id:da6205778843028597] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (327,558) -- (326,583) ;
+%Straight Lines [id:da05404998569239172] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (326,274) -- (326,288) ;
+%Straight Lines [id:da9735038453834474] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (327,128) -- (326,153) ;
+%Straight Lines [id:da6374241897604687] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (301,313) -- (186,341) ;
+%Straight Lines [id:da13727327539580814] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (348,241) -- (487,261) ;
+%Straight Lines [id:da5999113227941706] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (351,313) -- (490,333) ;
+
+% Text Node
+\draw (319,17) node [anchor=north west][inner sep=0.75pt]   [align=left] {x7};
+% Text Node
+\draw (319,602) node [anchor=north west][inner sep=0.75pt]   [align=left] {x1};
+% Text Node
+\draw (480,280) node [anchor=north west][inner sep=0.75pt]   [align=left] {x4};
+% Text Node
+\draw (481,140) node [anchor=north west][inner sep=0.75pt]   [align=left] {x5};
+% Text Node
+\draw (172,139) node [anchor=north west][inner sep=0.75pt]   [align=left] {x8};
+% Text Node
+\draw (322,455) node [anchor=north west][inner sep=0.75pt]   [align=left] {x2};
+% Text Node
+\draw (321,306) node [anchor=north west][inner sep=0.75pt]   [align=left] {x3};
+% Text Node
+\draw (321,170) node [anchor=north west][inner sep=0.75pt]   [align=left] {x6};
+% Text Node
+\draw (317,93) node [anchor=north west][inner sep=0.75pt]   [align=left] {y7};
+% Text Node
+\draw (320,523) node [anchor=north west][inner sep=0.75pt]   [align=left] {y2};
+% Text Node
+\draw (320,379) node [anchor=north west][inner sep=0.75pt]   [align=left] {y1};
+% Text Node
+\draw (322,241) node [anchor=north west][inner sep=0.75pt]   [align=left] {y5};
+% Text Node
+\draw (477,355) node [anchor=north west][inner sep=0.75pt]   [align=left] {y4};
+% Text Node
+\draw (180,359) node [anchor=north west][inner sep=0.75pt]   [align=left] {y3};
+% Text Node
+\draw (169,233) node [anchor=north west][inner sep=0.75pt]   [align=left] {y6};
+
+
+\end{tikzpicture}
+
+\captionof{figure}{$x_{7}$}
+\end{minipage}\\
+En esta representacion de arbol, vemos como tiene tan solo 5 elementos de $x$ unidos a elementos de $y$.\\
+\newline
+
+
+
+Ahora veremos el caso de $x_{9}$ al cual le aplicamos el algoritmo de caminos alternantes para intentar encontrar mas Matchs:
+\\
+\newline
+\begin{minipage}[t]{0.6\textwidth}
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,865); %set diagram left start at 0, and has height of 865
+
+%Shape: Circle [id:dp96551580239401] 
+\draw   (293,26) .. controls (293,12.19) and (304.19,1) .. (318,1) .. controls (331.81,1) and (343,12.19) .. (343,26) .. controls (343,39.81) and (331.81,51) .. (318,51) .. controls (304.19,51) and (293,39.81) .. (293,26) -- cycle ;
+%Shape: Circle [id:dp7181294089721264] 
+\draw   (153,696) .. controls (153,682.19) and (164.19,671) .. (178,671) .. controls (191.81,671) and (203,682.19) .. (203,696) .. controls (203,709.81) and (191.81,721) .. (178,721) .. controls (164.19,721) and (153,709.81) .. (153,696) -- cycle ;
+%Shape: Circle [id:dp35540402344638333] 
+\draw   (152,606) .. controls (152,592.19) and (163.19,581) .. (177,581) .. controls (190.81,581) and (202,592.19) .. (202,606) .. controls (202,619.81) and (190.81,631) .. (177,631) .. controls (163.19,631) and (152,619.81) .. (152,606) -- cycle ;
+%Shape: Circle [id:dp5457747427174537] 
+\draw   (151,518) .. controls (151,504.19) and (162.19,493) .. (176,493) .. controls (189.81,493) and (201,504.19) .. (201,518) .. controls (201,531.81) and (189.81,543) .. (176,543) .. controls (162.19,543) and (151,531.81) .. (151,518) -- cycle ;
+%Shape: Circle [id:dp9650871090759707] 
+\draw   (32,426) .. controls (32,412.19) and (43.19,401) .. (57,401) .. controls (70.81,401) and (82,412.19) .. (82,426) .. controls (82,439.81) and (70.81,451) .. (57,451) .. controls (43.19,451) and (32,439.81) .. (32,426) -- cycle ;
+%Shape: Circle [id:dp5808984298258207] 
+\draw   (150,427) .. controls (150,413.19) and (161.19,402) .. (175,402) .. controls (188.81,402) and (200,413.19) .. (200,427) .. controls (200,440.81) and (188.81,452) .. (175,452) .. controls (161.19,452) and (150,440.81) .. (150,427) -- cycle ;
+%Shape: Circle [id:dp9314133060953004] 
+\draw   (253,419) .. controls (253,405.19) and (264.19,394) .. (278,394) .. controls (291.81,394) and (303,405.19) .. (303,419) .. controls (303,432.81) and (291.81,444) .. (278,444) .. controls (264.19,444) and (253,432.81) .. (253,419) -- cycle ;
+%Shape: Circle [id:dp9420840784273736] 
+\draw   (149,335) .. controls (149,321.19) and (160.19,310) .. (174,310) .. controls (187.81,310) and (199,321.19) .. (199,335) .. controls (199,348.81) and (187.81,360) .. (174,360) .. controls (160.19,360) and (149,348.81) .. (149,335) -- cycle ;
+%Shape: Circle [id:dp8260591016252696] 
+\draw   (23,269) .. controls (23,255.19) and (34.19,244) .. (48,244) .. controls (61.81,244) and (73,255.19) .. (73,269) .. controls (73,282.81) and (61.81,294) .. (48,294) .. controls (34.19,294) and (23,282.81) .. (23,269) -- cycle ;
+%Shape: Circle [id:dp3320702001456195] 
+\draw   (358,333) .. controls (358,319.19) and (369.19,308) .. (383,308) .. controls (396.81,308) and (408,319.19) .. (408,333) .. controls (408,346.81) and (396.81,358) .. (383,358) .. controls (369.19,358) and (358,346.81) .. (358,333) -- cycle ;
+%Shape: Circle [id:dp673079743122905] 
+\draw   (279,257) .. controls (279,243.19) and (290.19,232) .. (304,232) .. controls (317.81,232) and (329,243.19) .. (329,257) .. controls (329,270.81) and (317.81,282) .. (304,282) .. controls (290.19,282) and (279,270.81) .. (279,257) -- cycle ;
+%Shape: Circle [id:dp12633512243309197] 
+\draw   (146,213) .. controls (146,199.19) and (157.19,188) .. (171,188) .. controls (184.81,188) and (196,199.19) .. (196,213) .. controls (196,226.81) and (184.81,238) .. (171,238) .. controls (157.19,238) and (146,226.81) .. (146,213) -- cycle ;
+%Shape: Circle [id:dp8578232723990683] 
+\draw   (217,145) .. controls (217,131.19) and (228.19,120) .. (242,120) .. controls (255.81,120) and (267,131.19) .. (267,145) .. controls (267,158.81) and (255.81,170) .. (242,170) .. controls (228.19,170) and (217,158.81) .. (217,145) -- cycle ;
+%Shape: Circle [id:dp519688502963336] 
+\draw   (455,207) .. controls (455,193.19) and (466.19,182) .. (480,182) .. controls (493.81,182) and (505,193.19) .. (505,207) .. controls (505,220.81) and (493.81,232) .. (480,232) .. controls (466.19,232) and (455,220.81) .. (455,207) -- cycle ;
+%Shape: Circle [id:dp8194911879850247] 
+\draw   (371,148) .. controls (371,134.19) and (382.19,123) .. (396,123) .. controls (409.81,123) and (421,134.19) .. (421,148) .. controls (421,161.81) and (409.81,173) .. (396,173) .. controls (382.19,173) and (371,161.81) .. (371,148) -- cycle ;
+%Shape: Circle [id:dp6024854380726176] 
+\draw   (293,94) .. controls (293,80.19) and (304.19,69) .. (318,69) .. controls (331.81,69) and (343,80.19) .. (343,94) .. controls (343,107.81) and (331.81,119) .. (318,119) .. controls (304.19,119) and (293,107.81) .. (293,94) -- cycle ;
+%Straight Lines [id:da9888184560913912] 
+\draw    (318,51) -- (318,69) ;
+%Straight Lines [id:da7390136626953763] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (343,111) -- (373,132) ;
+%Straight Lines [id:da047390045503791] 
+\draw    (321,277) -- (366,312) ;
+%Straight Lines [id:da6703495287011912] 
+\draw    (420,164) -- (461,194) ;
+%Straight Lines [id:da7752457086227922] 
+\draw    (221,164) -- (186,190) ;
+%Straight Lines [id:da10522018280151124] 
+\draw    (174,360) -- (175,383) -- (175,402) ;
+%Straight Lines [id:da8536095375781128] 
+\draw    (176,543) -- (177,581) ;
+%Straight Lines [id:da4085634908536928] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (262,130) -- (296,108) ;
+%Straight Lines [id:da8696805684802368] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (171,238) -- (174,310) ;
+%Straight Lines [id:da4685714359541503] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (324,239) -- (380,170) ;
+%Straight Lines [id:da6255360311373321] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (79,412) -- (151,352) ;
+%Straight Lines [id:da7571613145443592] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (73,259) -- (145,221) ;
+%Straight Lines [id:da2662701128677517] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (261,166) -- (288,233) ;
+%Straight Lines [id:da6896435001187341] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (198,342) -- (261,400) ;
+%Straight Lines [id:da2109703731674063] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (177,631) -- (178,671) ;
+%Straight Lines [id:da8029257643854883] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (175,452) -- (176,493) ;
+%Shape: Circle [id:dp7035294759376093] 
+\draw   (264,334) .. controls (264,320.19) and (275.19,309) .. (289,309) .. controls (302.81,309) and (314,320.19) .. (314,334) .. controls (314,347.81) and (302.81,359) .. (289,359) .. controls (275.19,359) and (264,347.81) .. (264,334) -- cycle ;
+%Straight Lines [id:da012228204306911405] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (299,283) -- (294,310) ;
+
+% Text Node
+\draw (314,18) node [anchor=north west][inner sep=0.75pt]   [align=left] {x9};
+% Text Node
+\draw (286,325) node [anchor=north west][inner sep=0.75pt]   [align=left] {x7};
+% Text Node
+\draw (378,326) node [anchor=north west][inner sep=0.75pt]   [align=left] {x5};
+% Text Node
+\draw (395,139) node [anchor=north west][inner sep=0.75pt]   [align=left] {x8};
+% Text Node
+\draw (235,134) node [anchor=north west][inner sep=0.75pt]   [align=left] {x6};
+% Text Node
+\draw (40,258) node [anchor=north west][inner sep=0.75pt]   [align=left] {x4};
+% Text Node
+\draw (172,324) node [anchor=north west][inner sep=0.75pt]   [align=left] {x3};
+% Text Node
+\draw (173,683) node [anchor=north west][inner sep=0.75pt]   [align=left] {x1};
+% Text Node
+\draw (174,508) node [anchor=north west][inner sep=0.75pt]   [align=left] {x2};
+% Text Node
+\draw (312,84) node [anchor=north west][inner sep=0.75pt]   [align=left] {y8};
+% Text Node
+\draw (472,201) node [anchor=north west][inner sep=0.75pt]   [align=left] {y6};
+% Text Node
+\draw (299,247) node [anchor=north west][inner sep=0.75pt]   [align=left] {y7};
+% Text Node
+\draw (168,200) node [anchor=north west][inner sep=0.75pt]   [align=left] {y5};
+% Text Node
+\draw (272,410) node [anchor=north west][inner sep=0.75pt]   [align=left] {y3};
+% Text Node
+\draw (53,414) node [anchor=north west][inner sep=0.75pt]   [align=left] {y4};
+% Text Node
+\draw (173,418) node [anchor=north west][inner sep=0.75pt]   [align=left] {y1};
+% Text Node
+\draw (171,599) node [anchor=north west][inner sep=0.75pt]   [align=left] {y2};
+
+
+\end{tikzpicture}
+
+\captionof{figure}{$x_{9}$}
+\end{minipage}\\
 En esta representacion de arbol, vemos como tiene 6 elementos de $x$ unidos a elementos de $y$.\\
 \newline
 
 
 
-Ahora veremos el caso de $x_{5}$ al cual le aplicamos el algoritmo de caminos alternantes para intentar encontrar mas Matchs:
+Ahora veremos el caso de $x_{1}$ al cual le aplicamos el algoritmo de caminos alternantes para intentar encontrar mas Matchs:
 \\
 \newline
 \begin{minipage}[t]{0.6\textwidth}
 
-\captionof{figure}{$x_{}$}
-\end{minipage}
-En esta representacion de arbol, vemos como tiene 6 elementos de $x$ unidos a elementos de $y$.\\
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.6pt,y=0.6pt,yscale=-0.9,xscale=0.9]
+%uncomment if require: \path (0,904); %set diagram left start at 0, and has height of 904
+
+%Shape: Circle [id:dp17630383941323835] 
+\draw   (91,29) .. controls (91,15.19) and (102.19,4) .. (116,4) .. controls (129.81,4) and (141,15.19) .. (141,29) .. controls (141,42.81) and (129.81,54) .. (116,54) .. controls (102.19,54) and (91,42.81) .. (91,29) -- cycle ;
+%Shape: Circle [id:dp11420604115618338] 
+\draw   (369,707) .. controls (369,693.19) and (380.19,682) .. (394,682) .. controls (407.81,682) and (419,693.19) .. (419,707) .. controls (419,720.81) and (407.81,732) .. (394,732) .. controls (380.19,732) and (369,720.81) .. (369,707) -- cycle ;
+%Shape: Circle [id:dp6426544648599442] 
+\draw   (138,644) .. controls (138,630.19) and (149.19,619) .. (163,619) .. controls (176.81,619) and (188,630.19) .. (188,644) .. controls (188,657.81) and (176.81,669) .. (163,669) .. controls (149.19,669) and (138,657.81) .. (138,644) -- cycle ;
+%Shape: Circle [id:dp4014147960769431] 
+\draw   (249,641) .. controls (249,627.19) and (260.19,616) .. (274,616) .. controls (287.81,616) and (299,627.19) .. (299,641) .. controls (299,654.81) and (287.81,666) .. (274,666) .. controls (260.19,666) and (249,654.81) .. (249,641) -- cycle ;
+%Shape: Circle [id:dp8686995672773546] 
+\draw   (448,621) .. controls (448,607.19) and (459.19,596) .. (473,596) .. controls (486.81,596) and (498,607.19) .. (498,621) .. controls (498,634.81) and (486.81,646) .. (473,646) .. controls (459.19,646) and (448,634.81) .. (448,621) -- cycle ;
+%Shape: Circle [id:dp6154208054093927] 
+\draw   (297,548) .. controls (297,534.19) and (308.19,523) .. (322,523) .. controls (335.81,523) and (347,534.19) .. (347,548) .. controls (347,561.81) and (335.81,573) .. (322,573) .. controls (308.19,573) and (297,561.81) .. (297,548) -- cycle ;
+%Shape: Circle [id:dp35621675559068755] 
+\draw   (291,455) .. controls (291,441.19) and (302.19,430) .. (316,430) .. controls (329.81,430) and (341,441.19) .. (341,455) .. controls (341,468.81) and (329.81,480) .. (316,480) .. controls (302.19,480) and (291,468.81) .. (291,455) -- cycle ;
+%Shape: Circle [id:dp6632429885656043] 
+\draw   (167,457) .. controls (167,443.19) and (178.19,432) .. (192,432) .. controls (205.81,432) and (217,443.19) .. (217,457) .. controls (217,470.81) and (205.81,482) .. (192,482) .. controls (178.19,482) and (167,470.81) .. (167,457) -- cycle ;
+%Shape: Circle [id:dp7904389052306827] 
+\draw   (245,379) .. controls (245,365.19) and (256.19,354) .. (270,354) .. controls (283.81,354) and (295,365.19) .. (295,379) .. controls (295,392.81) and (283.81,404) .. (270,404) .. controls (256.19,404) and (245,392.81) .. (245,379) -- cycle ;
+%Shape: Circle [id:dp7694670602212048] 
+\draw   (11,377) .. controls (11,363.19) and (22.19,352) .. (36,352) .. controls (49.81,352) and (61,363.19) .. (61,377) .. controls (61,390.81) and (49.81,402) .. (36,402) .. controls (22.19,402) and (11,390.81) .. (11,377) -- cycle ;
+%Shape: Circle [id:dp08699759511186089] 
+\draw   (90,372) .. controls (90,358.19) and (101.19,347) .. (115,347) .. controls (128.81,347) and (140,358.19) .. (140,372) .. controls (140,385.81) and (128.81,397) .. (115,397) .. controls (101.19,397) and (90,385.81) .. (90,372) -- cycle ;
+%Shape: Circle [id:dp25724647716016524] 
+\draw   (89,303) .. controls (89,289.19) and (100.19,278) .. (114,278) .. controls (127.81,278) and (139,289.19) .. (139,303) .. controls (139,316.81) and (127.81,328) .. (114,328) .. controls (100.19,328) and (89,316.81) .. (89,303) -- cycle ;
+%Shape: Circle [id:dp9475747488952493] 
+\draw   (91,227) .. controls (91,213.19) and (102.19,202) .. (116,202) .. controls (129.81,202) and (141,213.19) .. (141,227) .. controls (141,240.81) and (129.81,252) .. (116,252) .. controls (102.19,252) and (91,240.81) .. (91,227) -- cycle ;
+%Shape: Circle [id:dp4830745705037578] 
+\draw   (91,159) .. controls (91,145.19) and (102.19,134) .. (116,134) .. controls (129.81,134) and (141,145.19) .. (141,159) .. controls (141,172.81) and (129.81,184) .. (116,184) .. controls (102.19,184) and (91,172.81) .. (91,159) -- cycle ;
+%Shape: Circle [id:dp6706836357885951] 
+\draw   (91,97) .. controls (91,83.19) and (102.19,72) .. (116,72) .. controls (129.81,72) and (141,83.19) .. (141,97) .. controls (141,110.81) and (129.81,122) .. (116,122) .. controls (102.19,122) and (91,110.81) .. (91,97) -- cycle ;
+%Straight Lines [id:da9579664245947038] 
+\draw    (116,54) -- (116,72) ;
+%Straight Lines [id:da6496905169353486] 
+\draw    (322,480) -- (322,523) ;
+%Straight Lines [id:da43698149672863895] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (339,465) -- (463,597) ;
+%Straight Lines [id:da35521130994547323] 
+\draw    (247,397) -- (209,437) ;
+%Straight Lines [id:da812371405972288] 
+\draw    (115,329) -- (115,347) ;
+%Straight Lines [id:da16325502031174888] 
+\draw    (116,184) -- (116,202) ;
+%Straight Lines [id:da2809698211039041] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (314,572) -- (287,616) ;
+%Straight Lines [id:da1064756778610153] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (288,398) -- (308,430) ;
+%Straight Lines [id:da8443712078837854] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (139,310) -- (249,362) ;
+%Straight Lines [id:da4031141325944648] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (97,323) -- (50,357) ;
+%Straight Lines [id:da9467135662619536] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (116,252) -- (114,278) ;
+%Straight Lines [id:da20718355977590552] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (116,122) -- (116,134) ;
+%Straight Lines [id:da052471403284868656] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (447,616) -- (347,557) ;
+%Straight Lines [id:da42371638447503746] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (296,562) -- (182,625) ;
+%Shape: Circle [id:dp4094351814623627] 
+\draw   (447,836) .. controls (447,822.19) and (458.19,811) .. (472,811) .. controls (485.81,811) and (497,822.19) .. (497,836) .. controls (497,849.81) and (485.81,861) .. (472,861) .. controls (458.19,861) and (447,849.81) .. (447,836) -- cycle ;
+%Shape: Circle [id:dp3640973102712146] 
+\draw   (450,736) .. controls (450,722.19) and (461.19,711) .. (475,711) .. controls (488.81,711) and (500,722.19) .. (500,736) .. controls (500,749.81) and (488.81,761) .. (475,761) .. controls (461.19,761) and (450,749.81) .. (450,736) -- cycle ;
+%Straight Lines [id:da9199188834046728] 
+\draw    (452,642) -- (413,690) ;
+%Straight Lines [id:da9659430430827708] 
+\draw    (475,761) -- (472,811) ;
+%Straight Lines [id:da013769896851913432] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (473,646) -- (475,711) ;
+
+% Text Node
+\draw (317,538) node [anchor=north west][inner sep=0.75pt]   [align=left] {y7};
+% Text Node
+\draw (111,18) node [anchor=north west][inner sep=0.75pt]   [align=left] {x1};
+% Text Node
+\draw (156,632) node [anchor=north west][inner sep=0.75pt]   [align=left] {x5};
+% Text Node
+\draw (271,633) node [anchor=north west][inner sep=0.75pt]   [align=left] {x7};
+% Text Node
+\draw (470,612) node [anchor=north west][inner sep=0.75pt]   [align=left] {x8};
+% Text Node
+\draw (468,825) node [anchor=north west][inner sep=0.75pt]   [align=left] {x9};
+% Text Node
+\draw (310,445) node [anchor=north west][inner sep=0.75pt]   [align=left] {x6};
+% Text Node
+\draw (188,448) node [anchor=north west][inner sep=0.75pt]   [align=left] {x4};
+% Text Node
+\draw (110,294) node [anchor=north west][inner sep=0.75pt]   [align=left] {x3};
+% Text Node
+\draw (114,148) node [anchor=north west][inner sep=0.75pt]   [align=left] {x2};
+% Text Node
+\draw (112,87) node [anchor=north west][inner sep=0.75pt]   [align=left] {y2};
+% Text Node
+\draw (109,215) node [anchor=north west][inner sep=0.75pt]   [align=left] {y1};
+% Text Node
+\draw (388,702) node [anchor=north west][inner sep=0.75pt]   [align=left] {y6};
+% Text Node
+\draw (471,725) node [anchor=north west][inner sep=0.75pt]   [align=left] {y8};
+% Text Node
+\draw (263,367) node [anchor=north west][inner sep=0.75pt]   [align=left] {y5};
+% Text Node
+\draw (110,366) node [anchor=north west][inner sep=0.75pt]   [align=left] {y3};
+% Text Node
+\draw (32,367) node [anchor=north west][inner sep=0.75pt]   [align=left] {y4};
+
+
+\end{tikzpicture}
+
+\captionof{figure}{$x_{1}$}
+\end{minipage}\\
+En esta representacion de arbol, vemos como tiene 7 elementos de $x$ unidos a elementos de $y$, por lo que es el que consideraremos como el mach mas grande de este grafo bipartito. A continuacion nombraremos los vertices que fueron cambiados para poder lograr este resultado: \\
 \newline
-
-
-
-Ahora veremos el caso de $x_{5}$ al cual le aplicamos el algoritmo de caminos alternantes para intentar encontrar mas Matchs:
-\\
-\newline
-\begin{minipage}[t]{0.6\textwidth}
-
-\captionof{figure}{$x_{}$}
-\end{minipage}
-En esta representacion de arbol, vemos como tiene 6 elementos de $x$ unidos a elementos de $y$.\\
-\newline
-
-
-
-Ahora veremos el caso de $x_{5}$ al cual le aplicamos el algoritmo de caminos alternantes para intentar encontrar mas Matchs:
-\\
-\newline
-\begin{minipage}[t]{0.6\textwidth}
-
-\captionof{figure}{$x_{}$}
-\end{minipage}
-En esta representacion de arbol, vemos como tiene 6 elementos de $x$ unidos a elementos de $y$.\\
-\newline
-
-
-
-Ahora veremos el caso de $x_{5}$ al cual le aplicamos el algoritmo de caminos alternantes para intentar encontrar mas Matchs:
-\\
-\newline
-\begin{minipage}[t]{0.6\textwidth}
-
-\captionof{figure}{$x_{}$}
-\end{minipage}
-
-
+Desligamos los nodos:
+\begin{itemize}
+    \item ($x_{2}$)-($y_{2}$)
+    \item ($x_{3}$)-($y_{1}$)
+    \item ($x_{8}$)-($y_{8}$)
+\end{itemize}
+Y ligamos los nodos:
+\begin{itemize}
+    \item ($x_{1}$)-($y_{2}$)
+    \item ($x_{2}$)-($y_{1}$)
+    \item ($x_{3}$)-($y_{3}$)
+    \item ($x_{4}$)-($y_{5}$)
+    \item ($x_{8}$)-($y_{6}$)
+    \item ($x_{9}$)-($y_{8}$)
+\end{itemize}
+Con lo cual el grafo bipartito resultante es:
+\begin{figure}[htb]
+\centering
+\begin{tikzpicture}[-,auto,semithick,main node/.style={circle,draw}]
+\begin{scope} [node distance=1.5cm and 3.0cm]
+\node[main node] (x1) {$x_1$};
+\node[main node] (x2) [right of=x1] {$x_2$};
+\node[main node] (x3) [right of=x2] {$x_3$};
+\node[main node] (x4) [right of=x3] {$x_4$};
+\node[main node] (x5) [right of=x4] {$x_5$};
+\node[main node] (x6) [right of=x5] {$x_6$};
+\node[main node] (x7) [right of=x6] {$x_7$};
+\node[main node] (x8) [right of=x7] {$x_8$};
+\node[main node] (x9) [right of=x8] {$x_9$};
+\node[main node] (y1) [below left of=x2, yshift=-0.5cm, xshift=0.4cm] {$y_1$};
+\node[main node] (y2) [right of=y1] {$y_2$};
+\node[main node] (y3) [right of=y2] {$y_3$};
+\node[main node] (y4) [right of=y3] {$y_4$};
+\node[main node] (y5) [right of=y4] {$y_5$};
+\node[main node] (y6) [right of=y5] {$y_6$};
+\node[main node] (y7) [right of=y6] {$y_7$};
+\node[main node] (y8) [right of=y7] {$y_8$};
+\end{scope}
+%conexiones de los estados
+\path 	(x1)	edge [dashed]			node {} (y2)
+		(x2)	edge [dashed]			node {} (y1)
+		      	edge [line width=2.0pt]	node {} (y2)
+		(x3)	edge [line width=2.0pt] 	node {} (y1)
+		(x3)	edge [dashed]			node {} (y3)
+		(x3) 	edge [dashed]			node {} (y4)
+		(x3)	edge [dashed]			node {} (y5)
+		(x4)	edge [dashed]			node {} (y5)
+	    	(x5)	edge [dashed]			node {} (y7)
+		(x6)	edge [line width=2.0pt]	node {} (y7)
+			edge [dashed]			node {} (y8)
+			edge [dashed]			node {} (y5)
+		(x7)	edge [dashed]			node {} (y7)
+		(x8)	edge [dashed]			node {} (y6)
+			edge [dashed]			node {} (y7)
+		       	edge [line width=2.0pt]	node {} (y8)
+		(x9) 	edge [dashed]			node {} (y8);
+\end{tikzpicture}
+\caption{Nuevo grafo bipartito de $X$ sobre $Y$}
+\label{f:bipartito}
+\end{figure} \\
 
 
 
