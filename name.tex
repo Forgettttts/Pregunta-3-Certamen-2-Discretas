@@ -1,0 +1,128 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,petri,topaths,shapes,automata}
+\usepackage{tkz-berge}
+
+\usepackage[position=bottom]{subfig}
+
+\setlength\parindent{0pt}
+
+\tikzset{
+    %Define standard arrow tip
+    >=stealth',
+    % Define arrow style
+    pil/.style={
+           ->,
+           thick,}
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{minipage}[t]{0.6\textwidth}
+
+{\LARGE \textbf{INF152} Estructuras Discretas}
+
+{\large Profesores: C. Lobos -- M. Bugueño -- G. Treimun}
+
+Universidad T\'ecnica Federico Santa Mar\'{\i}a
+
+Departamento de Inform\'atica -- Junio 10, 2020.
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+%RELLENE CON SUS DATOS PERSONALES:
+\textbf{Nombre}: Alan Zapata Silva\\[0.3cm]
+\textbf{Rol}: 201956567-2 \textbf{Paralelo}: 201
+\end{minipage}
+
+\vspace{0.4cm}
+
+{\Large Certamen 2 -- Pregunta 3 \textbf{40pts.}} 
+
+\vspace{0.4cm}
+
+\begin{enumerate}[1.]
+\item La Figura \ref{f:bipartito} muestra un Grafo bipartito desde el conjunto de partida $X$ al conjunto de llegada $Y$, es decir, $G(X\cup Y,E)$ y particular los arcos en ``negrita'' corresponden al Match actual. Aplique el algoritmo de caminos alternantes para encontrar el Match más grande que pueda. Debe dibujar los grafos respectivos y mostrar como se ``alternan'' los arcos, mejorando así el Match [\textbf{10\%}].
+
+\begin{figure}[htb]
+\centering
+\begin{tikzpicture}[-,auto,semithick,main node/.style={circle,draw}]
+\begin{scope} [node distance=1.5cm and 3.0cm]
+\node[main node] (x1) {$x_1$};
+\node[main node] (x2) [right of=x1] {$x_2$};
+\node[main node] (x3) [right of=x2] {$x_3$};
+\node[main node] (x4) [right of=x3] {$x_4$};
+\node[main node] (x5) [right of=x4] {$x_5$};
+\node[main node] (x6) [right of=x5] {$x_6$};
+\node[main node] (x7) [right of=x6] {$x_7$};
+\node[main node] (x8) [right of=x7] {$x_8$};
+\node[main node] (x9) [right of=x8] {$x_9$};
+\node[main node] (y1) [below left of=x2, yshift=-0.5cm, xshift=0.4cm] {$y_1$};
+\node[main node] (y2) [right of=y1] {$y_2$};
+\node[main node] (y3) [right of=y2] {$y_3$};
+\node[main node] (y4) [right of=y3] {$y_4$};
+\node[main node] (y5) [right of=y4] {$y_5$};
+\node[main node] (y6) [right of=y5] {$y_6$};
+\node[main node] (y7) [right of=y6] {$y_7$};
+\node[main node] (y8) [right of=y7] {$y_8$};
+\end{scope}
+%conexiones de los estados
+\path 	(x1)	edge [dashed]			node {} (y2)
+		(x2)	edge [dashed]			node {} (y1)
+		      	edge [dashed]	node {} (y2)
+		(x3)	edge [dashed] node {} (y1)
+		(x3)	edge [dashed]			node {} (y3)
+		(x3) 	edge [dashed]			node {} (y4)
+		(x3)	edge [dashed]			node {} (y5)
+		(x4)	edge [dashed]			node {} (y5)
+	    (x5)	edge [dashed]			node {} (y7)
+		(x6)	edge [dashed]	node {} (y7)
+			    edge [dashed]			node {} (y8)
+		    	edge [dashed]			node {} (y5)
+		(x7)	edge [dashed]			node {} (y7)
+		(x8)	edge [dashed]			node {} (y6)
+			    edge [dashed]			node {} (y7)
+		       	edge [dashed]	node {} (y8)
+		(x9) 	edge [dashed]			node {} (y8);
+\end{tikzpicture}
+\caption{Grafo bipartito de $X$ sobre $Y$}
+\label{f:bipartito}
+\end{figure} 
+
+
+
+
+
+\item Utilizando la fórmula de \textbf{deficiencia}, demuestre que el Match encontrado en la pregunta 1 es maximal. \textbf{Nota}: puede calcular la deficiencia utilizando todos los $A\subseteq X$, es decir, para los $2^9 = 512$ subconjuntos. O bien, puede utilizar el formalismo aprendido en técnicas de demostración y con un argumento, que incluya el cálculo de la deficiencia, demostrar que el Match encontrado es maximal [\textbf{10\%}]. 
+
+
+
+
+
+
+
+\item Imagínese que se dibuja un grafo sobre un cilindro, de forma tal que todos los nodos estarán equidistantes con su vecinos horizontales y verticales. Cada nodo se conectará con sus 2 vecinos horizontales, sus 2 verticales y sus 4 vecinos en diagonal, salvo por supuesto los nodos que estén en los extremos inferior y superior del cilindro, que tendrán solo 5 conexiones. Cada ``fila'' de nodos en el cilindro tiene la misma cantidad de nodos y entre ellos forman un ciclo. No se sabe cuantos nodos hay, solo que se respetan las restricciones mencionadas. Determine el número crómatico para cualquier cantidad de nodos que cumplan con las restricciones dadas [\textbf{20\%}]. \textbf{Nota}: puede analizar por casos. 
+\end{enumerate}
+
+\end{document}
+
+
+
