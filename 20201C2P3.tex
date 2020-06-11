@@ -760,23 +760,23 @@ Con lo cual el grafo bipartito resultante es:
 \node[main node] (y8) [right of=y7] {$y_8$};
 \end{scope}
 %conexiones de los estados
-\path 	(x1)	edge [dashed]			node {} (y2)
-		(x2)	edge [dashed]			node {} (y1)
-		      	edge [line width=2.0pt]	node {} (y2)
-		(x3)	edge [line width=2.0pt] 	node {} (y1)
-		(x3)	edge [dashed]			node {} (y3)
+\path 	(x1)	edge [line width=2.0pt]			node {} (y2)
+		(x2)	edge [line width=2.0pt]			node {} (y1)
+		      	edge [dashed]	node {} (y2)
+		(x3)	edge [dashed] 	node {} (y1)
+		(x3)	edge [line width=2.0pt]			node {} (y3)
 		(x3) 	edge [dashed]			node {} (y4)
 		(x3)	edge [dashed]			node {} (y5)
-		(x4)	edge [dashed]			node {} (y5)
+		(x4)	edge [line width=2.0pt]			node {} (y5)
 	    	(x5)	edge [dashed]			node {} (y7)
 		(x6)	edge [line width=2.0pt]	node {} (y7)
 			edge [dashed]			node {} (y8)
 			edge [dashed]			node {} (y5)
 		(x7)	edge [dashed]			node {} (y7)
-		(x8)	edge [dashed]			node {} (y6)
+		(x8)	edge [line width=2.0pt]			node {} (y6)
 			edge [dashed]			node {} (y7)
-		       	edge [line width=2.0pt]	node {} (y8)
-		(x9) 	edge [dashed]			node {} (y8);
+		       	edge [dashed]	node {} (y8)
+		(x9) 	edge [line width=2.0pt]			node {} (y8);
 \end{tikzpicture}
 \caption{Nuevo grafo bipartito de $X$ sobre $Y$}
 \label{f:bipartito}
